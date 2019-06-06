@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/Content/custom.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @{
+        Html.RenderPartial("Navbar");
+    }
+    
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+<footer>
+    @{
+        Html.RenderPartial("Footer");
+    }
+</footer>
