@@ -13,9 +13,14 @@
                 <h1 class="display-3">Hello!</h1>
                 <p class="lead">I am Matthew Jenkins, welcome to my personal site!</p>
                 <hr class="my-2" />
-                <p class="lead">
-                    <button type="button" class="btn btn-dark btn-lg" href="#!">Large button</button>
+                <p class="lead d-none d-lg-block">
+                    <button type="button" class="btn btn-dark btn-lg" onclick="location.href='@Url.Action("GetResume","Home")';">Resume</button>
                 </p>
+                <p class="lead d-lg-none">
+                    <button type="button" class="btn btn-dark" onclick="location.href='@Url.Action("DownloadResume","Home")'">Download Resume</button>
+                </p>
+
+                
             </div>
         </div>
     </body>
