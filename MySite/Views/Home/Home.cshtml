@@ -1,4 +1,5 @@
-﻿@{
+﻿@using System.Web.Optimization
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -7,21 +8,29 @@
 <html>
 <head>
 </head>
-    <body>
-        <div class="jumbotron vertical-center text-center" style="background-color:#878787;">
-            <div class="container">
-                <h1 class="display-3">Hello!</h1>
-                <p class="lead">I am Matthew Jenkins, a fullstack software developer.</p>
-                <hr class="my-2" />
-                <p class="lead d-none d-lg-block">
-                    <button type="button" class="btn btn-dark btn-lg" onclick="location.href='@Url.Action("GetResume","Home")';">Resume</button>
-                </p>
-                <p class="lead d-lg-none">
-                    <button type="button" class="btn btn-dark" onclick="location.href='@Url.Action("DownloadResume","Home")'">Download Resume</button>
-                </p>
-
-                
-            </div>
+<body>
+    <div class="jumbotron vertical-center text-center" style="background-color:#878787;">
+        <div class="container">
+            <h1 class="display-3">Hello!</h1>
+            <p class="lead">I am Matthew Jenkins, a fullstack software developer.</p>
+            <hr class="my-2" />
+            <p class="lead d-none d-lg-block">
+                <a href="/Home/GetResume" target="_blank" class="btn btn-dark btn-lg">Resume</a>
+            </p>
+            <p class="lead d-lg-none">
+                <a href="/Home/DownloadResume" target="_blank" class="btn btn-dark ga-event">Download Resume</a>
+            </p>
         </div>
-    </body>
+    </div>
+</body>
 </html>
+@section pagescripts{
+@Scripts.Render("~/bundles/download")
+<script>
+    (function (download) {
+        $(function () {
+            download.onReady();
+        });
+    })(download);
+</script>
+    }
