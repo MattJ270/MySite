@@ -6,12 +6,11 @@ using System.Web.Mvc;
 
 namespace MySite.Controllers
 {
-    public class AboutMeController : Controller
+    public class ErrorController : Controller
     {
-        // GET: AboutMe
-        [HandleError]
-        public ActionResult AboutMe()
+        public ViewResult Error(int id)
         {
+            Response.StatusCode = 404;
             return View();
         }
     }

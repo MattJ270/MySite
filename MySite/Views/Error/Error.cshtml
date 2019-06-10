@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">ERROR @Response.StatusCode</h1>
+        <p class="lead">@Response.StatusDescription</p>
+    </div>
+</div>
+
