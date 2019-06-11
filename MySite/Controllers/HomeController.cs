@@ -15,11 +15,11 @@ namespace MySite.Controllers
         }
         public FileResult GetResume()
         {
-            return File("../Resume/lorem-ipsum.pdf", "application/pdf");
+            return File("~/Personal/Resume/lorem-ipsum.pdf", "application/pdf");
         }
         public FileResult DownloadResume()
         {
-            return File("../Resume/lorem-ipsum.pdf", "application/pdf", Server.UrlEncode("../Resume/lorem-ipsum.pdf"));
+            return File("~/Personal/Resume/lorem-ipsum.pdf", "application/pdf", Server.UrlEncode("../Resume/lorem-ipsum.pdf"));
         }
 
 

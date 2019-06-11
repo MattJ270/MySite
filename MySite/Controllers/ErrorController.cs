@@ -10,7 +10,7 @@ namespace MySite.Controllers
     {
         public ViewResult Error(int id)
         {
-            Response.StatusCode = 404;
+            Response.StatusCode = id;
             return View();
         }
     }

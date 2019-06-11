@@ -135,7 +135,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Resume\lorem-ipsum.pdf" />
+    <Content Include="Personal\Resume\lorem-ipsum.pdf" />
     <None Include="Properties\PublishProfiles\MatthewJenkins - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
