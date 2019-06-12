@@ -111,10 +111,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Global.asax" />
-    <Content Include="Personal\Images\404-error.jpg" />
-    <Content Include="Personal\Images\404gif.gif" />
     <Content Include="Personal\Images\background.jpg" />
-    <Content Include="Personal\Images\download %282%29.png" />
+    <Content Include="Personal\Images\PhotoOfMe.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
