@@ -8,7 +8,7 @@ namespace MySite.Controllers
 {
     public class ContactController : Controller
     {
-        [HandleError]
+        
         public ViewResult Contact()
         {
             return View();

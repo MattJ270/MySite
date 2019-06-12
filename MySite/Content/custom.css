@@ -11,3 +11,14 @@ body {
     align-items: center;
 }
 
+.jumbotron-color {
+    background-color:#878787;
+}
+
+.marginremove{
+    margin-bottom:0rem;
+}
+
+.noflex{
+    display:block !important;
+}

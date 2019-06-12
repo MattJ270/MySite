@@ -8,7 +8,7 @@ namespace MySite.Controllers
 {
     public class HomeController : Controller
     {
-        [HandleError]
+        
         public ViewResult Home()
         {
             
