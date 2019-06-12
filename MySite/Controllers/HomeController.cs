@@ -11,6 +11,7 @@ namespace MySite.Controllers
         [HandleError]
         public ViewResult Home()
         {
+            
             return View();
         }
         public FileResult GetResume()

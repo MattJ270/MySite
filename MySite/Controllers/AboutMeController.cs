@@ -8,6 +8,7 @@ namespace MySite.Controllers
 {
     public class AboutMeController : Controller
     {
+        [HandleError]
         public ActionResult AboutMe()
         {
             return View();
