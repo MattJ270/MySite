@@ -5,6 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title</title>
+    @Styles.Render("~/bundles/bootstrapCss")
     @Styles.Render("~/bundles/css")
     @Html.Partial("_GoogleAnalytics")
 </head>
@@ -13,9 +14,7 @@
         Html.RenderPartial("_Navbar");
     }
 
-    <div>
         @RenderBody()
-    </div>
 </body>
 </html>
 <footer>
@@ -24,4 +23,5 @@
     }
 </footer>
 @Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrapJs")
 @RenderSection("pagescripts", false)

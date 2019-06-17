@@ -5,7 +5,6 @@ body {
 }
 
 .vertical-center {
-    min-height: 50%;
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -15,10 +14,10 @@ body {
     background-color:#878787;
 }
 
-.marginremove{
-    margin-bottom:0rem;
-}
-
 .noflex{
     display:block !important;
+}
+
+.footer-color {
+    background-color:#0079e3;
 }

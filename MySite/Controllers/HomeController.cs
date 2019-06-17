@@ -12,11 +12,11 @@ namespace MySite.Controllers
         }
         public FileResult GetResume()
         {
-            return File("~/Personal/Resume/Resume.pdf", "application/pdf");
+            return File("~/Content/Resume/Resume.pdf", "application/pdf");
         }
         public FileResult DownloadResume()
         {
-            return File("~/Personal/Resume/Resume.pdf", "application/pdf", Server.UrlEncode("../Resume/Resume.pdf"));
+            return File("~/Content/Resume/Resume.pdf", "application/pdf", Server.UrlEncode("../Resume/Resume.pdf"));
         }
 
 
